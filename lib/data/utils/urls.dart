@@ -16,6 +16,9 @@ class Urls {
   static const String readProfile = '$_baseUrl/ReadProfile';
   static const String createProfileUrl = '$_baseUrl/CreateProfile';
   static const String createProductReviewUrl = '$_baseUrl/CreateProductReview';
-
-  static getReviewList({required int productId}) {}
+  static const String productWishListUrl = '$_baseUrl/ProductWishList';
+  static String getReviewList({required int productId}) =>
+      '$_baseUrl/ListReviewByProduct/$productId';
+  static String removeWishListUrl({required int productId}) =>
+      '$_baseUrl/RemoveWishList/$productId';
 }
